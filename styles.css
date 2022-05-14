@@ -1,105 +1,148 @@
-h1 {
-  color: #502050;
-  font-family: 'League Spartan', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-  padding-top: 70px;
-  padding-right: 300px;
-  margin-left: 200px;
-  margin-top: 80px;
-}
-
 body {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  font-family: "Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
- img {
-  border-radius: 2em;
-  margin-right: 20px;
-  width: 50px;
- }
-
-.firstParagraph {
-  color: #937B92;
-  margin-left: 200px;
-  padding-right: 250px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1500px;
+  padding: 40px;
 }
 
-.rating {
-  margin-top: 150px;
-  color: #502050;
-  font-weight: 500;
-}
-
-.secondRow {
-  margin: 0 200px;
-  margin-top: 100px;
+.top-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
   margin-bottom: 50px;
 }
 
-.card {
-  margin-top: 2em;
-  padding: 40px;
-  border-radius: 0.5em;
+.main-text {
+  color: #502050;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.bottom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buyer {
+  color: white;
   background-color: #502050;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card .card-header {
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  margin-top: 10px;
-  height: 40px;
-}
-
-.card .card-title {
-  color: #EE68A4;
-  font-size: 0.8em;
-  margin-top: 0;
-  margin-left: 70px;
-}
-
-.card .card-text {
-  color: white;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  font-weight: 400;
-  font-size: 0.9em;
-}
-
-.col-lg-4 {
-  width: 430px;
-  height: 350px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.rectangle {
-  height: 50px;
-  width: 480px;
-  background-color: #F7F2F7;
+  padding: 25px;
   border-radius: 0.5em;
+  max-width: 350px;
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
 
-.rectangleSpacing {
-  margin-left: 50px;
-  margin-top: 15px;
+.buyer > img {
+  border-radius: 50%;
 }
 
-.rectangleTwo {
-  margin-left: 60px;
+.buyer > h5 {
+  line-height: 1.5rem;
 }
 
-.rectangleThree {
-  margin-left: 120px;
-}
-
-.secondCard {
+.buyer-feedback {
+  grid-column: span 2;
   margin-top: 20px;
 }
 
-.thirdCard {
-  margin-top: 40px;
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rating {
+  background-color: #f7f2f7;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 0.5em;
+  color: #502050;
+  font-weight: 700;
+  width: 300px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stars > i {
+  color: goldenrod;
+}
+
+.rating-1 {
+  margin-right: 80px;
+}
+
+.rating-2 {
+  margin-right: 40px;
+}
+
+.buyer {
+  color: white;
+  background-color: #502050;
+  padding: 25px;
+  border-radius: 0.5em;
+}
+
+.buyer-2 {
+  position: relative;
+  top: 20px;
+}
+
+.buyer-3 {
+  position: relative;
+  top: 40px;
+}
+.verified {
+  color: #ee68a4;
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .main-text {
+    text-align: center;
+  }
+
+  .ratings {
+    align-items: center;
+  }
+
+  .rating-1 {
+    margin-right: 10px;
+  }
+
+  .rating-2 {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1467px) {
+  .buyer-2 {
+    top: 0px;
+  }
+
+  .buyer-3 {
+    top: 0px;
+  }
 }
