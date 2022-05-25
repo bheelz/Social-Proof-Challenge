@@ -48,11 +48,11 @@ h1 {
   grid-template-columns: 100px 1fr;
 }
 
-.buyer > img {
+.buyer>img {
   border-radius: 50%;
 }
 
-.buyer > h5 {
+.buyer>h5 {
   line-height: 1.5rem;
 }
 
@@ -81,7 +81,7 @@ h1 {
   justify-content: space-around;
 }
 
-.stars > i {
+.stars>i {
   color: goldenrod;
 }
 
@@ -109,6 +109,7 @@ h1 {
   position: relative;
   top: 40px;
 }
+
 .verified {
   color: #ee68a4;
 }
