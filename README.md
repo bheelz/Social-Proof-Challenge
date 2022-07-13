@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://bheelz.github.io/Social-Proof-Challenge/]
+- [Live Site](https://bheelz.github.io/socialProofChallenge/)
 
 ### Built with
 
